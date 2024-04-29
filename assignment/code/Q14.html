@@ -1,0 +1,34 @@
+<!-- Q.14 Write a JavaScript exercise to get the extension of a filename.?  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getFileExtension(filename) {
+
+            var parts = filename.split('.');
+            if (parts.length > 1) {
+                return parts[parts.length - 1];
+            } else {
+                return "No extension found";
+            }
+        }
+
+        var filename1 = "example.txt";
+        var filename2 = "script.js";
+        var filename3 = ".gitignore";
+
+        console.log("Extension of", filename1 + ":", getFileExtension(filename1));
+        console.log("Extension of", filename2 + ":", getFileExtension(filename2));
+        console.log("Extension of", filename3 + ":", getFileExtension(filename3));
+
+    </script>
+</body>
+
+</html>

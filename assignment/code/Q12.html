@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        var years = 5;
+        var days = 1825;
+        var daysConverted = yearsToDays(years);
+        console.log(years + " years is equal to " + daysConverted + " days.");
+        var yearsConverted = daysToYears(days);
+        console.log(days + " days is equal to " + yearsConverted + " years.");
+        function yearsToDays(years) {
+            return years * 365;
+        }
+        function daysToYears(days) {
+            return days / 365;
+        }
+
+    </script>
+</body>
+
+</html>

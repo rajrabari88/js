@@ -1,0 +1,48 @@
+<!-- Q.30 What are the looping structures in JavaScript? Any one Example? -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    for (let i = 0; i < 5; i++) {
+      console.log(i);
+    }
+
+
+    let i = 0;
+    while (i < 5) {
+      console.log(i);
+      i++;
+    }
+
+
+
+    do {
+      console.log(i);
+      i++;
+    } while (i < 5);
+    const person = {
+      name: 'raj',
+      age: 20,
+      gender: 'male'
+    };
+    for (const key in person) {
+      console.log(`${key}: ${person[key]}`);
+    }
+    const array = [1, 2, 3, 4, 5];
+
+    for (const element of array) {
+      console.log(element);
+    }
+  </script>
+
+</body>
+
+</html>

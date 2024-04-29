@@ -1,0 +1,30 @@
+<!-- Q.13 Convert temperature Fahrenheit to Celsius? (Conditional logic Question) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var fahrenheitTemp = 68; 
+var celsiusTemp = fahrenheitToCelsius(fahrenheitTemp);
+console.log(fahrenheitTemp + "°F is equal to " + celsiusTemp.toFixed(2) + "°C.");
+function fahrenheitToCelsius(fahrenheit) {
+    var celsius;
+    
+    
+    if (typeof fahrenheit === 'number') {
+       
+        celsius = (5/9) * (fahrenheit - 32);
+        return celsius;
+    } else {
+        return "Invalid input. Please enter a number.";
+    }
+}
+
+    </script>
+</body>
+</html>
